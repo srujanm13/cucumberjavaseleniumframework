@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cucumber Regression Suite" parallel="methods" thread-count="5" data-provider-thread-count="5" preserve-order="false">
+    <test name="Smoke Suite">
+        <classes>
+            <class name="runners.SmokeTestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Negative Suite">
+        <classes>
+            <class name="runners.NegativeTestRunner"/>
+        </classes>
+    </test>
+</suite>

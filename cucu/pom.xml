@@ -1,0 +1,210 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.credera</groupId>
+  <artifactId>cucu</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>cucu</name>
+  <url>http://maven.apache.org</url>
+
+
+
+  <!-- ========================================================= -->
+  <!--               Java 11 Setup                               -->
+  <!-- ========================================================= -->
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <suiteXmlFile>suites/suite.xml</suiteXmlFile>
+    <browser>chrome</browser>
+    <device>desktop</device>
+    <os>windows</os>
+    <env>qa</env>
+
+    <!-- Centralized versioning -->
+    <selenium.version>4.22.0</selenium.version>
+    <testng.version>7.10.0</testng.version>
+    <cucumber.version>7.18.0</cucumber.version>
+    <extent.version>5.1.0</extent.version>
+    <log4j.version>2.25.3</log4j.version>
+  </properties>
+
+  <!-- ========================================================= -->
+  <!--               PROFILES (qa, stage, prod)                  -->
+  <!-- ========================================================= -->
+
+  <profiles>
+
+    <profile>
+      <id>qa</id>
+      <properties>
+        <env>qa</env>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>stage</id>
+      <properties>
+        <env>stage</env>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>prod</id>
+      <properties>
+        <env>prod</env>
+      </properties>
+    </profile>
+
+  </profiles>
+
+  <!-- ========================================================= -->
+  <!--                       DEPENDENCIES                        -->
+  <!-- ========================================================= -->
+
+  <dependencies>
+
+    <!-- ========== SELENIUM WEB DRIVER ========== -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium.version}</version>
+    </dependency>
+
+    <!-- ========== TESTNG ========== -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>${testng.version}</version>
+    </dependency>
+
+    <!-- ========== CUCUMBER (Java + TestNG Binding) ========== -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>${cucumber.version}</version>
+    </dependency>
+
+    <!-- Cucumber reporting plugins -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-core</artifactId>
+      <version>${cucumber.version}</version>
+    </dependency>
+
+    <!-- ========== EXTENT REPORTS ========== -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>${extent.version}</version>
+    </dependency>
+
+    <!-- ========== JSON SIMPLE (Test Data) ========== -->
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+      <artifactId>json-simple</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+
+    <!-- ========== LOG4J 2 (THREAD-SAFE LOGGING) ========== -->
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+
+  </dependencies>
+
+  <!-- ========================================================= -->
+  <!--                       MAVEN PLUGINS                       -->
+  <!-- ========================================================= -->
+
+  <build>
+
+    <plugins>
+
+      <!-- ========== COMPILER PLUGIN (JAVA 11) ========== -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <source>11</source>
+          <target>11</target>
+        </configuration>
+      </plugin>
+
+
+      <!-- ==================================================== -->
+      <!--   SUREFIRE PLUGIN → Runs TestNG + Cucumber Runner    -->
+      <!-- ==================================================== -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+          </suiteXmlFiles>
+
+          <!-- Pass System Variables -->
+          <systemPropertyVariables>
+            <browser>${browser}</browser>
+            <device>${device}</device>
+            <os>${os}</os>
+            <env>${env}</env>
+          </systemPropertyVariables>
+
+          <!-- Parallel Execution -->
+          <parallel>methods</parallel>
+          <threadCount>5</threadCount>
+
+          <!-- Java 11 Required Open Modules -->
+          <argLine>
+            --add-opens java.base/java.lang=ALL-UNNAMED
+          </argLine>
+
+        </configuration>
+      </plugin>
+
+
+      <!-- ==================================================== -->
+      <!-- OPTIONAL: CLEAN plugin (auto-clean logs/reports)     -->
+      <!-- ==================================================== -->
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>3.3.2</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>logs</directory>
+            </fileset>
+            <fileset>
+              <directory>reports</directory>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>

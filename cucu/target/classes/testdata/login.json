@@ -1,0 +1,17 @@
+{
+  "invalidPassword": {
+    "username": "rahulshettyacademy",
+    "password": "WrongPassword123",
+    "errorMessage": "Incorrect username/password."
+  },
+  "invalidUsername": {
+    "username": "wronguser",
+    "password": "learning",
+    "errorMessage": "Incorrect username/password."
+  },
+  "invalidUsernameAndPassword": {
+    "username": "invalid.user",
+    "password": "invalid.password",
+    "errorMessage": "Incorrect username/password."
+  }
+}

@@ -1,0 +1,9 @@
+2026-03-25 11:24:18,878 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - ========== STARTING TEST: Valid Login ==========
+2026-03-25 11:25:53,370 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Cleared text: By.id: username
+2026-03-25 11:25:53,898 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Sent keys: rahulshettyacademy
+2026-03-25 11:25:54,134 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Cleared text: By.id: password
+2026-03-25 11:25:54,364 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Sent keys: Learning@830$3mK2
+2026-03-25 11:25:54,895 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Clicked: By.id: terms
+2026-03-25 11:25:55,265 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Clicked: By.id: signInBtn
+2026-03-25 11:25:57,040 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - ========== ENDING TEST: Valid Login ==========
+

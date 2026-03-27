@@ -1,0 +1,27 @@
+2026-03-27 11:55:06,456 [main] [chrome] [mobile] [Valid Login] INFO  - ========== STARTING TEST: Valid Login ==========
+2026-03-27 11:55:19,623 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: username
+2026-03-27 11:55:19,749 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: rahulshettyacademy
+2026-03-27 11:55:19,834 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: password
+2026-03-27 11:55:19,961 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: Learning@830$3mK2
+2026-03-27 11:55:20,485 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: terms
+2026-03-27 11:55:20,643 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: signInBtn
+2026-03-27 11:55:21,919 [main] [chrome] [mobile] [Valid Login] INFO  - ========== ENDING TEST: Valid Login ==========
+
+2026-03-27 11:59:04,539 [main] [chrome] [mobile] [Valid Login] INFO  - ========== STARTING TEST: Valid Login ==========
+2026-03-27 11:59:13,941 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: username
+2026-03-27 11:59:14,070 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: rahulshettyacademy
+2026-03-27 11:59:14,177 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: password
+2026-03-27 11:59:14,308 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: Learning@830$3mK2
+2026-03-27 11:59:14,543 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: terms
+2026-03-27 11:59:14,710 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: signInBtn
+2026-03-27 11:59:16,078 [main] [chrome] [mobile] [Valid Login] INFO  - ========== ENDING TEST: Valid Login ==========
+
+2026-03-27 12:10:32,580 [main] [chrome] [mobile] [Valid Login] INFO  - ========== STARTING TEST: Valid Login ==========
+2026-03-27 12:10:40,690 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: username
+2026-03-27 12:10:40,777 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: rahulshettyacademy
+2026-03-27 12:10:40,845 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: password
+2026-03-27 12:10:40,935 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: Learning@830$3mK2
+2026-03-27 12:10:41,092 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: terms
+2026-03-27 12:10:41,186 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: signInBtn
+2026-03-27 12:10:41,861 [main] [chrome] [mobile] [Valid Login] INFO  - ========== ENDING TEST: Valid Login ==========
+

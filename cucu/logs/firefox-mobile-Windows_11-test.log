@@ -1,0 +1,39 @@
+2026-03-25 11:24:18,878 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - ========== STARTING TEST: Valid Login ==========
+2026-03-25 11:25:53,370 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Cleared text: By.id: username
+2026-03-25 11:25:53,898 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Sent keys: rahulshettyacademy
+2026-03-25 11:25:54,134 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Cleared text: By.id: password
+2026-03-25 11:25:54,364 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Sent keys: Learning@830$3mK2
+2026-03-25 11:25:54,895 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Clicked: By.id: terms
+2026-03-25 11:25:55,265 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - Clicked: By.id: signInBtn
+2026-03-25 11:25:57,040 [TestNG-PoolService-1] [firefox] [mobile] [Valid Login] INFO  - ========== ENDING TEST: Valid Login ==========
+
+2026-03-25 11:26:00,471 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - ========== STARTING TEST: Invalid Login With JSON Test Data ==========
+2026-03-25 11:26:00,470 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - ========== STARTING TEST: Invalid Login With JSON Test Data ==========
+2026-03-25 11:26:00,471 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - ========== STARTING TEST: Invalid Login With JSON Test Data ==========
+2026-03-25 11:26:25,674 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Cleared text: By.id: username
+2026-03-25 11:26:27,165 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Sent keys: wronguser
+2026-03-25 11:26:28,164 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Cleared text: By.id: password
+2026-03-25 11:26:28,741 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Sent keys: learning
+2026-03-25 11:26:29,853 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Clicked: By.id: terms
+2026-03-25 11:26:31,298 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Clicked: By.id: signInBtn
+2026-03-25 11:26:33,558 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Read text from: By.cssSelector: .alert-danger => Incorrect username/password.
+2026-03-25 11:26:33,721 [TestNG-PoolService-2] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - ========== ENDING TEST: Invalid Login With JSON Test Data ==========
+
+2026-03-25 11:26:35,303 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Cleared text: By.id: username
+2026-03-25 11:26:36,625 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Cleared text: By.id: username
+2026-03-25 11:26:36,843 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Sent keys: rahulshettyacademy
+2026-03-25 11:26:37,133 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Cleared text: By.id: password
+2026-03-25 11:26:37,393 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Sent keys: WrongPassword123
+2026-03-25 11:26:37,474 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Sent keys: invalid.user
+2026-03-25 11:26:37,828 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Cleared text: By.id: password
+2026-03-25 11:26:37,947 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Clicked: By.id: terms
+2026-03-25 11:26:38,238 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Sent keys: invalid.password
+2026-03-25 11:26:38,488 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Clicked: By.id: signInBtn
+2026-03-25 11:26:38,811 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Clicked: By.id: terms
+2026-03-25 11:26:39,125 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Clicked: By.id: signInBtn
+2026-03-25 11:26:40,765 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Read text from: By.cssSelector: .alert-danger => Incorrect username/password.
+2026-03-25 11:26:40,828 [TestNG-PoolService-1] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - ========== ENDING TEST: Invalid Login With JSON Test Data ==========
+
+2026-03-25 11:26:41,480 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - Read text from: By.cssSelector: .alert-danger => Incorrect username/password.
+2026-03-25 11:26:41,516 [TestNG-PoolService-3] [firefox] [mobile] [Invalid Login With JSON Test Data] INFO  - ========== ENDING TEST: Invalid Login With JSON Test Data ==========
+

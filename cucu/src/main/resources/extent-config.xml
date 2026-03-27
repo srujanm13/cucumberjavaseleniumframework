@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+
+    <!-- Report Metadata -->
+    <configuration>
+        <reportname>Selenium Cucumber Test Automation Report</reportname>
+        <documenttitle>Credera  Execution Report</documenttitle>
+        <encoding>UTF-8</encoding>
+
+        <!-- Global Theme: standard | dark -->
+        <theme>dark</theme>
+
+        <!-- Display Settings -->
+        <chartlocation>top</chartlocation>
+        <timelineEnabled>true</timelineEnabled>
+        <protocol>HTTPS</protocol>
+
+        <!-- Report View Order -->
+        <vieworder>
+            <order>dashboard</order>
+            <order>test</order>
+            <order>category</order>
+            <order>exception</order>
+            <order>author</order>
+            <order>device</order>
+        </vieworder>
+
+    </configuration>
+</extentreports>

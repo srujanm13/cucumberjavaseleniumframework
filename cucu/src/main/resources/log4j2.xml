@@ -1,0 +1,46 @@
+<Configuration status="WARN">
+    <Appenders>
+        <Routing name="ExecutionRouting">
+            <Routes pattern="$${ctx:executionFileKey}">
+                <Route>
+                    <RollingFile name="ExecutionFile-${ctx:executionFileKey}"
+                                 fileName="logs/${ctx:executionFileKey}.log"
+                                 filePattern="logs/archive/${ctx:executionFileKey}-%d{yyyy-MM-dd}-%i.log.gz">
+                        <PatternLayout>
+                            <Pattern>%d [%t] [%X{browser}] [%X{device}] [%X{testName}] %-5level - %msg%n</Pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <SizeBasedTriggeringPolicy size="10 MB"/>
+                            <TimeBasedTriggeringPolicy />
+                        </Policies>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+
+        <Routing name="ScenarioRouting">
+            <Routes pattern="$${ctx:logKey}">
+                <Route>
+                    <RollingFile name="ScenarioFile-${ctx:logKey}"
+                                 fileName="logs/scenarios/${ctx:logKey}.log"
+                                 filePattern="logs/scenarios/archive/${ctx:logKey}-%d{yyyy-MM-dd}-%i.log.gz">
+                        <PatternLayout>
+                            <Pattern>%d [%t] [%X{browser}] [%X{device}] [%X{testName}] %-5level - %msg%n</Pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <SizeBasedTriggeringPolicy size="10 MB"/>
+                            <TimeBasedTriggeringPolicy />
+                        </Policies>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ExecutionRouting" />
+            <AppenderRef ref="ScenarioRouting" />
+        </Root>
+    </Loggers>
+</Configuration>

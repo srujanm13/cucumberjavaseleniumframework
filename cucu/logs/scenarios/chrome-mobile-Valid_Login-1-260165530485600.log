@@ -1,0 +1,9 @@
+2026-03-27 12:10:32,580 [main] [chrome] [mobile] [Valid Login] INFO  - ========== STARTING TEST: Valid Login ==========
+2026-03-27 12:10:40,690 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: username
+2026-03-27 12:10:40,777 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: rahulshettyacademy
+2026-03-27 12:10:40,845 [main] [chrome] [mobile] [Valid Login] INFO  - Cleared text: By.id: password
+2026-03-27 12:10:40,935 [main] [chrome] [mobile] [Valid Login] INFO  - Sent keys: Learning@830$3mK2
+2026-03-27 12:10:41,092 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: terms
+2026-03-27 12:10:41,186 [main] [chrome] [mobile] [Valid Login] INFO  - Clicked: By.id: signInBtn
+2026-03-27 12:10:41,861 [main] [chrome] [mobile] [Valid Login] INFO  - ========== ENDING TEST: Valid Login ==========
+
